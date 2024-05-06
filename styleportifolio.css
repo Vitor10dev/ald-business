@@ -113,18 +113,14 @@ nav li a:hover{
   
   .card:hover {
    
-    width: 200px;
-    height: 200px;
-    background-color: #55ff00;
+    background-color: #f0f0f0;
     border-radius: 10%;
     padding: 20px;
-    margin-top: 4%;
-    margin-left: 35px;
+    margin-left: 50px;
     display: inline-flex;
     position: relative;
-    box-shadow: 1px 2px 16px #55ff00;
+    box-shadow: 1px 2px 16px rgb(62, 129, 6);
     transition: 0.5s;
-    color: rgb(0, 0, 0);
 
   }
   
@@ -168,8 +164,8 @@ nav li a:hover{
     padding-bottom: 3px;
     padding-left: 2px;
     padding-right: 2px;
-    background-color: #2c9b00;opacity:0.9;
-    color: aliceblue;
+    background-color: #ededed;opacity:0.9;
+    color: rgb(0, 0, 0);
   }
 
 
@@ -187,8 +183,8 @@ nav li a:hover{
     padding-left: 2px;
     padding-right: 2px;
     transition-duration: 0.3s;
-    background-color: #e5ff00;
-    color: #003cff;
+    background-color:  rgb(62, 129, 6);
+    color: #ffffff;
   }
 
   .logo{
@@ -221,14 +217,3 @@ nav li a:hover{
   height: 100%;
  }
 
- .message {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  color: #000000;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: sans-serif;
-  z-index: 999999;
-  font-size: 17px;
-}

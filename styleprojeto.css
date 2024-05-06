@@ -148,14 +148,3 @@ nav ul li.menuactive .submenu a:hover {
   background-color:rgb(194, 192, 192);
 }
 
-.message {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  color: #000000;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: sans-serif;
-  z-index: 999999;
-  font-size: 17px;
-}

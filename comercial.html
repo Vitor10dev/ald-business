@@ -29,7 +29,10 @@
         <li> <a href="portifolio.html">Portifolio</a></li>
         <li class="menuactive" onmouseover="showSubmenu()" onmouseout="hideSubmenu()"> <a href="#">Comercial</a>
             <div class="submenu" id="submenu">
-                <a href="#" onclick="mostrarIframe('desenvolvimento')">Desenvolvimento</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento1','Desenvolvimento 1')">Desenvolvimento 1</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento2','Desenvolvimento 2')">Desenvolvimento 2</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento3','Desenvolvimento 3')">Desenvolvimento 3</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento4','Desenvolvimento 4')">Desenvolvimento 4</a>
 
             </div>
         </li>
@@ -37,10 +40,7 @@
     </ul>
  </nav>
  
- <div class="message">
-    <p class="time" id="time"></p>
 
-  </div>
 
   <!--fecha todo nav-->
      
@@ -48,7 +48,10 @@
   <div class="paineis"> 
 
      
-       <iframe id="desenvolvimento" src="https://app.powerbi.com/view?r=eyJrIjoiMTIwOGM3OGMtM2FhNy00M2VkLWExODMtNjNhNGUyYzNmOTJjIiwidCI6ImJlYjU2MzY3LTE1OGQtNDg4Zi1iMGM5LTBiYjY5NTgxMGY0MCJ9" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento1" src="" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento2" src="" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento3" src="" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento4" src="" width="100%" style="height: 99vh;"></iframe>
        
 
   </div>
@@ -58,8 +61,8 @@
 
    <!-- Função para definir qual iframe aparecer -->
 
-  <script>
-    function mostrarIframe(id) {
+   <script>
+    function mostrarIframe(id, descricao) {
         // Esconde todos os iframes
         var iframes = document.querySelectorAll('iframe');
         iframes.forEach(function(iframe) {
@@ -71,7 +74,7 @@
         iframeMostrar.style.display = 'block';
 
         // Atualiza o título do projeto com base no iframe selecionado
-        document.getElementById('titulo_projeto').textContent = "  ⏩ " + id + " | expandir tela F11" 
+        document.getElementById('titulo_projeto').textContent = ">> " + descricao + " | expandir tela F11" 
     }
   </script>
   

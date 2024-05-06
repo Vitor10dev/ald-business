@@ -143,14 +143,4 @@ footer {
   }
 
 
-  .message {
-    position: absolute;
-    top: 0px;
-    right: 20px;
-    color: #000000;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: sans-serif;
-    z-index: 999999;
-    font-size: 17px;
-  }
+ 

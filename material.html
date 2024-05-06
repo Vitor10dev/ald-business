@@ -29,9 +29,9 @@
         <li> <a href="portifolio.html">Portifolio</a></li>
         <li class="menuactive" onmouseover="showSubmenu()" onmouseout="hideSubmenu()"> <a href="#">Material</a>
             <div class="submenu" id="submenu">
-                <a href="#" onclick="mostrarIframe('solicitacao_de_compra')">Solicitação de compra</a>
-                <a href="#" onclick="mostrarIframe('insumos_industriais')">Insumos industriais</a>
-                <a href="#" onclick="mostrarIframe('refeições')">Refeições</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento1','Desenvolvimento 1')">Desenvolvimento 1</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento2','Desenvolvimento 2')">Desenvolvimento 2</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento3','Desenvolvimento 2')">Desenvolvimento 3</a>
             </div>
         </li>
         <li class="titulo-projeto"> <h2 id="titulo_projeto"> << selecionar relatório </h2>  </li>
@@ -39,18 +39,15 @@
   </nav>
 
 
-  <div class="message">
-    <p class="time" id="time"></p>
 
-  </div>
      
    
   <div class="paineis"> 
 
      
-       <iframe id="solicitacao_de_compra" src="https://app.powerbi.com/view?r=eyJrIjoiYWU2MmM0MTAtMzExYy00ZDIzLWI5MGYtYzExOGFkZDg4ZDFlIiwidCI6ImYzM2U3Mjk2LTJjNzMtNGIzYi05NzZhLTUwMGQ1NmRlMDNlYiJ9" width="100%" style="height: 99vh;"></iframe>
-       <iframe id="insumos_industriais" src="https://app.powerbi.com/view?r=eyJrIjoiNzlkOTA1MGYtMjEwYS00NzU0LWJmODgtNTk5MWQ0YjAzY2ExIiwidCI6ImYzM2U3Mjk2LTJjNzMtNGIzYi05NzZhLTUwMGQ1NmRlMDNlYiJ9" width="100%" style="height: 99vh;"></iframe>
-       <iframe id="refeições" src="https://app.powerbi.com/view?r=eyJrIjoiN2ZkNWFjYTEtNGM3Zi00MWI5LWFjNTAtNWI4OWVlM2YzNzFjIiwidCI6ImYzM2U3Mjk2LTJjNzMtNGIzYi05NzZhLTUwMGQ1NmRlMDNlYiJ9" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento1" src="" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento2" src="" width="100%" style="height: 99vh;"></iframe>
+       <iframe id="desenvolvimento3" src="" width="100%" style="height: 99vh;"></iframe>
        
 
   </div>
@@ -61,8 +58,8 @@
 
    <!-- Função para definir qual iframe aparecer -->
 
-  <script>
-    function mostrarIframe(id) {
+   <script>
+    function mostrarIframe(id, descricao) {
         // Esconde todos os iframes
         var iframes = document.querySelectorAll('iframe');
         iframes.forEach(function(iframe) {
@@ -74,7 +71,7 @@
         iframeMostrar.style.display = 'block';
 
         // Atualiza o título do projeto com base no iframe selecionado
-        document.getElementById('titulo_projeto').textContent = "  ⏩ " + id + " | expandir tela F11" 
+        document.getElementById('titulo_projeto').textContent = ">> " + descricao + " | expandir tela F11" 
     }
   </script>
   

@@ -29,7 +29,7 @@
         <li> <a href="portifolio.html">Portifolio</a></li>
         <li class="menuactive" onmouseover="showSubmenu()" onmouseout="hideSubmenu()"> <a href="#">Gerencial</a>
             <div class="submenu" id="submenu">
-                <a href="#" onclick="mostrarIframe('desenvolvimento')">Desenvolvimento</a>
+                <a href="#" onclick="mostrarIframe('desenvolvimento','Desenvolvimento')">Desenvolvimento</a>
 
             </div>
         </li>
@@ -37,10 +37,7 @@
     </ul>
  </nav>
 
- <div class="message">
-    <p class="time" id="time"></p>
 
-  </div>
 
   <!--fecha todo nav-->
      
@@ -59,8 +56,8 @@
 
    <!-- Função para definir qual iframe aparecer -->
 
-  <script>
-    function mostrarIframe(id) {
+   <script>
+    function mostrarIframe(id, descricao) {
         // Esconde todos os iframes
         var iframes = document.querySelectorAll('iframe');
         iframes.forEach(function(iframe) {
@@ -72,7 +69,7 @@
         iframeMostrar.style.display = 'block';
 
         // Atualiza o título do projeto com base no iframe selecionado
-        document.getElementById('titulo_projeto').textContent = "  ⏩ " + id + " | expandir tela F11" 
+        document.getElementById('titulo_projeto').textContent = ">> " + descricao + " | expandir tela F11" 
     }
   </script>
   
