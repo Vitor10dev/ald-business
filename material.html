@@ -24,9 +24,9 @@
 
 <nav>
     <ul>
-        <li> <a href="index.html">Home</a></li>
+        <li> <a href="inicio.html">Inicio</a></li>
         <li> <a href="sobre.html">Duvidas</a></li>
-        <li> <a href="portifolio.html">Portifolio</a></li>
+        <li> <a href="portifolio.html">Projetos</a></li>
         <li class="menuactive" onmouseover="showSubmenu()" onmouseout="hideSubmenu()"> <a href="#">Material</a>
             <div class="submenu" id="submenu">
                 <a href="#" onclick="mostrarIframe('desenvolvimento1','Desenvolvimento 1')">Desenvolvimento 1</a>
@@ -34,7 +34,7 @@
                 <a href="#" onclick="mostrarIframe('desenvolvimento3','Desenvolvimento 2')">Desenvolvimento 3</a>
             </div>
         </li>
-        <li class="titulo-projeto"> <h2 id="titulo_projeto"> << selecionar relatório </h2>  </li>
+        <li class="titulo-projeto"> <h2 id="titulo_projeto"> << selecionar relatório aqui</h2>  </li>
     </ul>
   </nav>
 
@@ -71,7 +71,7 @@
         iframeMostrar.style.display = 'block';
 
         // Atualiza o título do projeto com base no iframe selecionado
-        document.getElementById('titulo_projeto').textContent = ">> " + descricao + " | expandir tela F11" 
+        document.getElementById('titulo_projeto').textContent = ">> " + descricao + " | expandir tela F11"
     }
   </script>
   

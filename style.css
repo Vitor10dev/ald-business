@@ -28,12 +28,12 @@ nav li{
 
 
 nav li.active a {
-  background-color: rgb(62, 129, 6);/* Altere a cor de fundo conforme necessário */
-  color: rgb(255, 255, 255); /* Altere a cor do texto conforme necessário */
+  color: rgb(0, 0, 0); /* Altere a cor do texto conforme necessário */
   border-radius: 5%;
   padding: 5px;
   margin: 2px;
   font-size: 14px;
+  text-decoration:underline;
 }
 
 

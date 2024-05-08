@@ -37,12 +37,12 @@ nav ul li {
 }
 
 nav ul li.menuactive a {
-  background-color:rgb(62, 129, 6);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0); /* Altere a cor do texto conforme necessário */
+  border-radius: 5%;
   padding: 5px;
   margin: 2px;
-  font-size: 15px;
-  transition: 0.3s;
+  font-size: 14px;
+  text-decoration:underline;
 }
 
 
@@ -129,7 +129,7 @@ iframe {
    position: relative;
    margin-top: 220px;
    text-decoration: none;
-   font-size:larger;
+   font-size:medium;
    font-family: sans-serif;
 }
 
@@ -137,13 +137,22 @@ nav ul li.menuactive .submenu a {
   background-color:rgb(236, 236, 236);
   color: #000000;
   border: none;
+  border-radius: 0;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 nav ul li.menuactive .submenu a:hover {
-  margin-left: 10px;
-  color: #000000;
+  color: #ffffff;
   transition: 0.3s;
-  text-decoration: underline;
+  background-color: rgb(15, 103, 0);
+  font-size: 13px;
 }
 
+
+h2 {
+
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #000000;
+ }
